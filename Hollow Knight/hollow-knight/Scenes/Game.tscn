@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ygst2wtya2gg"]
+
+[ext_resource type="PackedScene" uid="uid://cosvk3buf132k" path="res://Scenes/Player.tscn" id="1_gvixt"]
+[ext_resource type="Script" path="res://Scenes/camera_2d.gd" id="2_5bo77"]
+[ext_resource type="PackedScene" uid="uid://p2f3fihsgkco" path="res://Scenes/forest_background.tscn" id="2_737ff"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_gvixt")]
+scale = Vector2(0.75, 0.75)
+
+[node name="Camera2D" type="Camera2D" parent="Player" node_paths=PackedStringArray("player")]
+offset = Vector2(0, 340)
+position_smoothing_speed = 20.0
+script = ExtResource("2_5bo77")
+player = NodePath("..")
+
+[node name="ForestBackground" parent="." instance=ExtResource("2_737ff")]
+position = Vector2(420, 915)

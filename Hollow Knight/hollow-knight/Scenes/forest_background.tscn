@@ -1,0 +1,141 @@
+[gd_scene load_steps=13 format=3 uid="uid://p2f3fihsgkco"]
+
+[ext_resource type="Texture2D" uid="uid://crd2mdyc5wdie" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0010_1.png" id="1_fikjg"]
+[ext_resource type="Texture2D" uid="uid://bwcwblli4c82x" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="2_h0jyo"]
+[ext_resource type="Texture2D" uid="uid://dktl6cj1mmdbd" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0009_2.png" id="3_1rwp0"]
+[ext_resource type="Texture2D" uid="uid://bma0nnf8i5c1u" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0008_3.png" id="4_1qbnc"]
+[ext_resource type="Texture2D" uid="uid://ctv1bu76hvspj" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0005_5.png" id="5_yfu14"]
+[ext_resource type="Texture2D" uid="uid://ca33yiklub1h2" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0006_4.png" id="6_smx3e"]
+[ext_resource type="Texture2D" uid="uid://cmt181p2rx2b7" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0004_Lights.png" id="7_10ai0"]
+[ext_resource type="Texture2D" uid="uid://bkv7gviugy5hp" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0003_6.png" id="8_7bicx"]
+[ext_resource type="Texture2D" uid="uid://di540xcvjny4j" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0002_7.png" id="9_1qfnq"]
+[ext_resource type="Texture2D" uid="uid://2v37annql5a3" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0001_8.png" id="10_ccy7b"]
+[ext_resource type="Texture2D" uid="uid://usg6y3fbe0cc" path="res://Free Pixel Art Forest/PNG/Background layers/Layer_0000_9.png" id="11_jti6f"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_n3jt4"]
+distance = -59.0
+
+[node name="ForestBackground" type="Node2D"]
+
+[node name="FondoArboles" type="ParallaxBackground" parent="."]
+offset = Vector2(0.93, 0)
+scale = Vector2(1.685, 1.685)
+transform = Transform2D(1.685, 0, 0, 1.685, 0.93, 0)
+
+[node name="Capa Fondo color" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00101" type="Sprite2D" parent="FondoArboles/Capa Fondo color"]
+position = Vector2(579, 324.5)
+scale = Vector2(1.25862, 0.833544)
+texture = ExtResource("1_fikjg")
+
+[node name="Capa Colores" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00110" type="Sprite2D" parent="FondoArboles/Capa Colores"]
+position = Vector2(579, 436)
+scale = Vector2(1.24461, 0.53058)
+texture = ExtResource("2_h0jyo")
+
+[node name="Arboles 1" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00092" type="Sprite2D" parent="FondoArboles/Arboles 1"]
+position = Vector2(579, 246.563)
+scale = Vector2(1.24677, 1.00016)
+texture = ExtResource("3_1rwp0")
+
+[node name="Capa 4" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00083" type="Sprite2D" parent="FondoArboles/Capa 4"]
+position = Vector2(576.499, 280)
+scale = Vector2(1.24677, 1.10908)
+texture = ExtResource("4_1qbnc")
+
+[node name="Capa 5" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00055" type="Sprite2D" parent="FondoArboles/Capa 5"]
+position = Vector2(580, 318.75)
+scale = Vector2(1.23707, 0.801387)
+texture = ExtResource("5_yfu14")
+
+[node name="Capa 6" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00064" type="Sprite2D" parent="FondoArboles/Capa 6"]
+position = Vector2(582.5, 299.25)
+scale = Vector2(1.23599, 0.855612)
+texture = ExtResource("6_smx3e")
+
+[node name="Capa 7" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1100, 0)
+
+[node name="Layer00055" type="Sprite2D" parent="FondoArboles/Capa 7"]
+position = Vector2(576.5, 296.75)
+scale = Vector2(1.24892, 0.861917)
+texture = ExtResource("5_yfu14")
+
+[node name="Capa 8" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(2, 0)
+
+[node name="Layer0004Lights" type="Sprite2D" parent="FondoArboles/Capa 8"]
+clip_children = 2
+position = Vector2(971.638, 205.111)
+rotation = 0.0628319
+scale = Vector2(0.999184, 1)
+texture = ExtResource("7_10ai0")
+
+[node name="Layer0004Lights" type="Sprite2D" parent="FondoArboles/Capa 8/Layer0004Lights"]
+position = Vector2(-200, 0)
+rotation = 0.0628319
+scale = Vector2(0.999184, 1)
+texture = ExtResource("7_10ai0")
+
+[node name="Layer0004Lights2" type="Sprite2D" parent="FondoArboles/Capa 8"]
+modulate = Color(1, 1, 1, 0.243137)
+clip_children = 2
+position = Vector2(470, 180)
+rotation = 0.0872665
+texture = ExtResource("7_10ai0")
+
+[node name="Capa 9" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1100, 0)
+
+[node name="Layer00036" type="Sprite2D" parent="FondoArboles/Capa 9"]
+position = Vector2(561, 290.75)
+scale = Vector2(1.28664, 0.872005)
+texture = ExtResource("8_7bicx")
+
+[node name="Capa 10" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00027" type="Sprite2D" parent="FondoArboles/Capa 10"]
+position = Vector2(577, 287)
+scale = Vector2(1.25, 1)
+texture = ExtResource("9_1qfnq")
+
+[node name="Capa 11" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00018" type="Sprite2D" parent="FondoArboles/Capa 11"]
+position = Vector2(576.5, 178.5)
+scale = Vector2(1.24892, 1.18916)
+texture = ExtResource("10_ccy7b")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="FondoArboles/Capa 11"]
+position = Vector2(40.455, 320)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FondoArboles/Capa 11/StaticBody2D"]
+position = Vector2(137.727, 605.341)
+shape = SubResource("WorldBoundaryShape2D_n3jt4")
+
+[node name="capa 12" type="ParallaxLayer" parent="FondoArboles"]
+motion_mirroring = Vector2(1000, 0)
+
+[node name="Layer00009" type="Sprite2D" parent="FondoArboles/capa 12"]
+position = Vector2(576.5, 308.25)
+scale = Vector2(1.24892, 0.850567)
+texture = ExtResource("11_jti6f")
