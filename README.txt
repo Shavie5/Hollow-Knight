@@ -1,0 +1,1 @@
+Hola Josep, he intentat fer atacs per tal de que la vida no és baixés sola però, al no ser projectils i ser atacs melee. No m'acabava de funcionar, així que ho he deixat com estava.
